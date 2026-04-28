@@ -21,5 +21,5 @@ An efficient, custom-built ETL (Extract-Transform-Load) pipeline written in Java
 ## 👨‍💻 Run It Locally
 Ensure you have Java installed, then compile and run the script:
 ```bash
-javac EmailSanitizer2.java
-java EmailSanitizer2
+javac EmailSanitizer.java
+java EmailSanitizer
