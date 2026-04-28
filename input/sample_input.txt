@@ -1,0 +1,6 @@
+demo.1@email.in
+demo..2@email.ac.in
+demo@3.email.en.us
+demo4@gmail.com
+demo5@domain.ac.in
+demo6.new@@gmail.com

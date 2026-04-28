@@ -1,0 +1,6 @@
+demo.1@email.in -> Valid Email Address
+demo..2@email.ac.in -> Invalid Email Address
+demo@3.email.en.us -> Valid Email Address
+demo4@gmail.com -> Valid Email Address
+demo5@domain.ac.in -> Valid Email Address
+demo6.new@@gmail.com -> Invalid Email Address
