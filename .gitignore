@@ -1,0 +1,10 @@
+# Compiled class files
+*.class
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Ignore local test outputs
+valid_emails.csv
+invalid_emails.csv
