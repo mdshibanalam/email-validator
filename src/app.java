@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException; 
 import java.util.Scanner;
 
-class EmailSanitizer2 {
+class app {
     public static void main(String[] args) {
         
         Scanner sc = null;
@@ -12,12 +12,18 @@ class EmailSanitizer2 {
 
         try {
             File inputFile = new File("data/emails.txt");
-            File validOutput = new File("data/valid_emails.csv");
-            File invalidOutput = new File("data/invalid_emails.csv");
-            sc = new Scanner(myFile);
             
-            validWriter = new FileWriter("valid_emails.csv");
-            invalidWriter = new FileWriter("invalid_emails.csv");
+            File outputDir = new File("sample_output");
+            if (!outputDir.exists()) {
+                outputDir.mkdirs();
+            }
+            
+            File validFile = new File("sample_output/valid_emails.csv");
+            File invalidFile = new File("sample_output/invalid_emails.csv");
+            sc = new Scanner(inputFile);
+            
+            validWriter = new FileWriter(validFile);
+            invalidWriter = new FileWriter(invalidFile);
 
             System.out.println("Processing started...");
 
@@ -31,10 +37,13 @@ class EmailSanitizer2 {
                 }
             }
             
+            validWriter.close();
+            invalidWriter.close();
+            
             System.out.println("Processing complete! Check your folder.");
 
         } catch (IOException e) {
-            System.out.println("An error occurred: " + e.getMessage());
+            System.out.println("An error occurred during File I/O: " + e.getMessage());
         } finally {
             try {
                 if (sc != null) sc.close();
