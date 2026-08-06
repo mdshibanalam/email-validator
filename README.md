@@ -1,4 +1,4 @@
-# 📧 Bulk Email Sanitizer Pipeline
+# 📧 Java Based Bulk Email Sanitizer
 
 A lightweight, zero-dependency Java Command Line Interface (CLI) tool designed to read bulk email lists, validate their structural integrity character-by-character, and export the sorted data into clean `.csv` files. 
 
