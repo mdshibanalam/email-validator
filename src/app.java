@@ -11,7 +11,9 @@ class EmailSanitizer2 {
         FileWriter invalidWriter = null;
 
         try {
-            File myFile = new File("emails.txt");
+            File inputFile = new File("data/emails.txt");
+            File validOutput = new File("data/valid_emails.csv");
+            File invalidOutput = new File("data/invalid_emails.csv");
             sc = new Scanner(myFile);
             
             validWriter = new FileWriter("valid_emails.csv");
