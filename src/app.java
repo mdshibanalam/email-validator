@@ -13,13 +13,13 @@ class app {
         try {
             File inputFile = new File("data/emails.txt");
             
-            File outputDir = new File("sample_output");
+            File outputDir = new File("output");
             if (!outputDir.exists()) {
                 outputDir.mkdirs();
             }
             
-            File validFile = new File("sample_output/valid_emails.csv");
-            File invalidFile = new File("sample_output/invalid_emails.csv");
+            File validFile = new File("output/valid_emails.csv");
+            File invalidFile = new File("output/invalid_emails.csv");
             sc = new Scanner(inputFile);
             
             validWriter = new FileWriter(validFile);
