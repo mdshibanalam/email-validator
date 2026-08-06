@@ -46,7 +46,7 @@ Below are sample performance metrics tested on a standard consumer laptop:
 
 5. Execute the pipeline:
    ```bash
-   javac src/app.java
+   java -cp src app
    ```
 
 ## 🧪 Testing With Your Own Data
