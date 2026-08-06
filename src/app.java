@@ -12,12 +12,12 @@ class app {
 
         try {
             File inputFile = new File("data/emails.txt");
-            
-            File outputDir = new File("output");
+
+	    File outputDir = new File("output");
             if (!outputDir.exists()) {
                 outputDir.mkdirs();
-            }
-            
+            }	
+
             File validFile = new File("output/valid_emails.csv");
             File invalidFile = new File("output/invalid_emails.csv");
             sc = new Scanner(inputFile);
@@ -37,9 +37,9 @@ class app {
                 }
             }
             
-            validWriter.close();
+	    validWriter.close();
             invalidWriter.close();
-            
+
             System.out.println("Processing complete! Check your folder.");
 
         } catch (IOException e) {
